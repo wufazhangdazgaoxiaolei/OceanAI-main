@@ -1,10 +1,9 @@
-派聪明（PaiSmart）是一个企业级的 AI 知识库管理系统，采用检索增强生成（RAG）技术，提供智能文档处理和检索能力。
+OceanAI—RAG企业知识库系统
+OceanAI 解决了海洋一所各部门卫星遥感、观测等多源数据的管理孤岛问题，赋能于科研智能应用。系统基于 RAG（检索增强生成）架构开发，支持大文件分片上传、文档向量化处理和语义检索，实现了从文档管理到智能问答的完整流程。
 
 核心技术栈包括 ElasticSearch、Kafka、WebSocket、Spring Security、Docker、MySQL 和 Redis。
 
-它的目标是帮助企业和个人更高效地管理和利用知识库中的信息，支持多租户架构，允许用户通过自然语言查询知识库，并获得基于自身文档的 AI 生成响应。
-
-![派聪明多模块架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102133.png)
+![OceanAI多模块架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102133.png)
 
 系统允许用户：
 
@@ -24,7 +23,7 @@
 + 文件存储 : MinIO
 + 文档解析 : Apache Tika
 + 安全认证 : Spring Security + JWT
-+ AI集成 : DeepSeek API/本地 Ollama+豆包 Embedding
++ AI集成 : DeepSeek API/本地 Ollama+通义千问 Embedding
 + 实时通信 : WebSocket
 + 依赖管理 : Maven
 + 响应式编程 : WebFlux
@@ -78,19 +77,19 @@ frontend/
 
 ## 核心功能
 
-![派聪明的架构概览](https://cdn.tobebetterjavaer.com/stutymore/README-20250730101618.png)
+![OceanAI的架构概览](https://cdn.tobebetterjavaer.com/stutymore/README-20250730101618.png)
 
 ### 知识库管理
 
-派聪明提供了完整的文档上传与解析功能，支持文件分片上传和断点续传，并支持标签进行组织管理。文档可以是公开的，也可以是私有的，并且可以与特定的组织标签关联，以便更好地进行权限分类。
+OceanAI提供了完整的文档上传与解析功能，支持GB级遥感观测文件分片上传和断点续传，并支持标签进行组织管理。文档可以是公开的，也可以是私有的，并且可以与特定的组织标签关联，以便更好地进行权限分类。
 
-![派聪明文档处理](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102808.png)
+![OceanAI文档处理](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102808.png)
 
 ### AI驱动的RAG实现
 
-派聪明的核心是 RAG 实现：
+OceanAI的核心是 RAG 实现：
 
-![派聪明聊天交互](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102837.png)
+![OceanAI聊天交互](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102837.png)
 
 - 将上传的文档进行语义分块
 - 调用豆包 Embedding 模型为每个文本块生成高维向量
@@ -100,9 +99,9 @@ frontend/
 
 ### 企业级多租户
 
-派聪明通过组织标签支持多租户架构。每个用户可以创建或加入一个或多个组织，每个组织可以拥有独立的知识库和文档管理。这样，企业可以在同一系统中管理多个团队或部门的知识库，而无需担心数据混淆或权限问题。
+OceanAI通过组织标签支持多租户架构。每个用户可以创建或加入一个或多个组织，每个组织可以拥有独立的知识库和文档管理。这样，企业可以在同一系统中管理多个团队或部门的知识库，而无需担心数据混淆或权限问题。
 
-![派聪明的安全架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730103118.png)
+![OceanAI的安全架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730103118.png)
 
 ### 实时通信
 
@@ -125,9 +124,9 @@ frontend/
 
 ## 架构设计
 
-派聪明的架构具备一个现代化的、云原生应用程序的特点，具有清晰的关注点分离、可扩展的组件和与 AI 技术的集成。模块化设计允许随着技术的发展，特别是快速变化的 AI 集成领域，未来可以扩展和替换单个组件。
+OceanAI的架构具备一个现代化的、云原生应用程序的特点，具有清晰的关注点分离、可扩展的组件和与 AI 技术的集成。模块化设计允许随着技术的发展，特别是快速变化的 AI 集成领域，未来可以扩展和替换单个组件。
 
-![派聪明的系统概述](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102655.png)
+![OceanAI的系统概述](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102655.png)
 
 控制层用于处理 HTTP 请求，验证输入，管理请求/响应格式化，并将业务逻辑委托给服务层。控制器按领域功能组织。遵循 RESTful 设计原则，集成了性能监控和日志记录，用于跟踪 API 使用和故障排除。
 
