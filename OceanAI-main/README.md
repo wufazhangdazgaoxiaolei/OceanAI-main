@@ -3,8 +3,6 @@ OceanAI 解决了海洋一所各部门卫星遥感、观测等多源数据的管
 
 核心技术栈包括 ElasticSearch、Kafka、WebSocket、Spring Security、Docker、MySQL 和 Redis。
 
-![OceanAI多模块架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102133.png)
-
 系统允许用户：
 
 - 上传和管理各种类型的文档
