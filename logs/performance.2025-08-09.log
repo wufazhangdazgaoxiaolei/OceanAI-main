@@ -1,0 +1,5 @@
+2025-08-09 22:50:40.528 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_REGISTER] 耗时:0ms 注册失败：参数为空
+2025-08-09 22:50:49.894 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_REGISTER] 耗时:164ms 注册成功
+2025-08-09 22:50:53.335 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_LOGIN] 耗时:160ms 登录成功
+2025-08-09 22:50:53.356 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:1ms 获取用户信息成功
+2025-08-09 22:50:53.390 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:8ms 获取用户上传文件成功
