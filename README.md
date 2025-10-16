@@ -1,7 +1,7 @@
 OceanAI—RAG企业知识库系统\
 OceanAI 解决了海洋一所各部门卫星遥感、观测等多源数据的管理孤岛问题，赋能于科研智能应用。系统基于 RAG（检索增强生成）架构开发，支持大文件分片上传、文档向量化处理和语义检索，实现了从文档管理到智能问答的完整流程。
 
-核心技术栈包括 ElasticSearch、Kafka、WebSocket、Spring Security、Docker、MySQL 和 Redis。
+核心技术栈包括 ElasticSearch、Kafka、WebSocket、Spring Security、MySQL 和 Redis。
 
 系统允许用户：
 
