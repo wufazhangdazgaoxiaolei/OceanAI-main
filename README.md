@@ -118,7 +118,7 @@ OceanAI通过组织标签支持多租户架构。每个用户可以创建或加�
 - MinIO 8.5.12
 - Kafka 3.2.1
 - Redis 7.0.11
-- Docker（可选，用于运行 Redis、MinIO、Elasticsearch 和 Kafka 等服务）
+
 
 ## 架构设计
 
